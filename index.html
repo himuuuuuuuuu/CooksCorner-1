@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cook's Corner - Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <!-- ********************************************************** -->
+    <!--*#1 Header section Top Banner *-->
+    <!-- ********************************************************** -->
+
+    <header>
+      <h1>🍕🍗Cook's Corner🍜🍝</h1>
+      <!-- <button>light Mode</button> -->
+    </header>
+
+    <!-- ********************************************************* -->
+    <!--* Search-Bar Section *-->
+    <!-- ********************************************************* -->
+
+    <div id="search-bar">
+      <div class="form">
+        <input
+          id="search-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Search Your Recipe 🍕🍗🍜🍝"
+        />
+        <button id="search-btn">Search 🔎</button>
+      </div>
+    </div>
+
+    <!-- ****************************************************************** -->
+    <!--* Category-Buttons Section *-->
+    <!-- ******************************************************************* -->
+
+    <div class="allCategoryButtons">
+      <button
+        class="CategoryBtn active"
+        onclick="fetchByCatagoty(this.innerText)"
+      >
+        All categories
+      </button>
+    </div>
+
+    <!-- displaying information about result  -->
+
+    <div id="result-info"></div>
+
+    <!-- ********************************************************************* -->
+    <!--* All Card Section *-->
+    <!-- ********************************************************************** -->
+
+    <div id="allCards">
+      <!-- <div class="mycard">
+            <div class="food-img">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="food-img">
+            </div>
+            <div class="food-info">
+                <h2>Food-item Name</h2>
+                <button onclick="getById(this)">Read More</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- ************************************** -->
+    <!--* MegaCard Section *-->
+    <!-- ************************************ -->
+
+    <div id="megaCard">
+      <!-- <h1 class="topbanner">food name</h1>
+      <hr />
+      <div class="parts">
+        <div class="left-part">
+          <img
+            src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="food-img"
+          />
+        </div>
+        <div class="right-part">
+          <p class="category"><span>Category</span> : Chicken</p>
+          <p class="area"><span>Area</span> : Japanese</p>
+
+          <p>
+            <span>Instructions :</span> <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis
+            dolore autem esse, voluptatibus numquam aliquam porro fuga dolor nam
+            tempora, ea nostrum aperiam deleniti perspiciatis sunt voluptatem
+            magni laboriosam eveniet dicta! Aut dolore incidunt exercitationem
+            quos error, velit esse!
+          </p>
+
+          <ol>
+            <li><span>Ingredient</span> :</li>
+            <br />
+            <li>stir-fry vegetables</li>
+            <li>stir-fry vegetables</li>
+            <li>stir-fry vegetables</li>
+            <li>stir-fry vegetables</li>
+            <li>stir-fry vegetables</li>
+            <li>stir-fry vegetables</li>
+          </ol>
+          <a
+            href="https:\/\/www.youtube.com\/watch?v=4aZr5hZXP_s"
+            target="_blank"
+            >watch video</a
+          >
+        </div> -->
+    </div>
+
+    <!-- ****************************************************************** -->
+    <!--* Footer Section Search By Letter section *-->
+    <!-- ******************************************************************* -->
+
+    <div id="searchByLettter">
+      <p>Search By first Letter</p>
+      <p>
+        <!-- <button onclick="searchByletter(this)">a</button> -->
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

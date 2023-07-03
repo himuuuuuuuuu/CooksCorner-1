@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Open+Sans&family=Poppins:wght@300;500;600&family=Roboto&display=swap");
+
+/* font-family: 'Alex Brush', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  overflow: hidden;
+}
+
+/**************************************/
+/**********#1_Header_Section_*********/
+/*************************************/
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-bottom: 1px solid beige;
+}
+
+/****************************************/
+/**********#2_Search_Bar_Section_********/
+/****************************************/
+
+#search-bar {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 650px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.form button {
+  width: 9vw;
+  padding: 7.5px;
+  background-color: rgb(55, 55, 120);
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  font-weight: 500;
+}
+
+/********************************************/
+/*****#3_All_Category_Buttons_Section_****/
+/*********************************************/
+
+.allCategoryButtons {
+  padding-inline: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.CategoryBtn {
+  padding: 8px;
+  margin: 8px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+/*active class for show which CategoryBtn is active right now*/
+.active {
+  padding: 8px;
+  background-color: red;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* **************************** */
+
+#result-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+#keyword {
+  font-size: larger;
+  color: black;
+  border-bottom: 1px solid white;
+}
+
+/**************************************/
+/******#4_All_cards_Section_******/
+/*************************************/
+
+#allCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding-block: 80px;
+  row-gap: 50px;
+}
+
+.mycard {
+  box-sizing: border-box;
+  width: 350px;
+  height: 470px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.food-img img {
+  /* width: 350px;
+  height: 400px; */
+  overflow: hidden;
+  width: 21.8rem;
+  height: auto;
+}
+
+.food-img img:hover {
+  opacity: 70%;
+}
+
+.food-info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.food-info button {
+  padding: 8px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.food-info button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.2s;
+}
+
+/****************************************/
+/*******#5_MegaCard_Section_*******/
+/****************************************/
+
+#megaCard .innerDiv {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding-inline: 70px;
+  padding-block: 50px;
+}
+
+.topbanner {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.parts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-part {
+  width: 50%;
+}
+
+.left-part img {
+  width: 600px;
+  border-radius: 2%;
+}
+
+.right-part {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right-part span {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.right-part a {
+  padding: 5px;
+  background-color: #fff;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 800;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.right-part a:hover {
+  background-color: red;
+  color: black;
+  border: 1px solid black;
+}
+
+/******************************************/
+/****#6_searchByLettter_Footer_section*****/
+/******************************************/
+
+#searchByLettter {
+  position: relative;
+  bottom: 0px;
+  min-height: 50px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#searchByLettter button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px grey;
+  border-color: none;
+  border: none;
+}
+
+#searchByLettter button:hover {
+  background-color: grey;
+}
+
